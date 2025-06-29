@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imageview2"
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            android:src="@drawable/juba"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/textView2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="আইফোনের সঙ্গে টেক্কা দেবে নাথিং ফোন ১, দাম হবে কত"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:background="#AE121111"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_alignBottom="@+id/imageview2"
+            android:padding="5dp"
+            android:textStyle="bold"
+            />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/textView2_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="জল্পনা-কল্পনার অবসান ঘটিয়ে বাজারে আস্তে যাচ্ছে লন্ডন ভিত্তিক প্রযুক্তি কোম্পানি নাথিং টেকনোলজি লিমিটেডের নতুন ফোন ‘নাথিং ফোন ১’। এই বিষয়টি নিশ্চিত করা হলেও ফোনটির ফিচার বা দাম নিয়ে সুস্পষ্ট ইঙ্গিত দেয়নি কোম্পানিটি। সম্প্রতি অনলাইনে দীর্ঘ ইভেন্টের আয়োজন করে নাথিং। যেখানে এই ফোনটির লঞ্চের বিষয়ে বলা হয়। সেই অনুষ্ঠানে কয়েকবার জানানো হয় অ্যাপলের সঙ্গে প্রতিযোগিতা করবে নাথিং ফোন ১। অর্থাৎ আইফোনের সঙ্গে টেক্কা দেবে ফোনটি। এমনটিই নির্মাতা প্রতিষ্ঠানের দাবি। এ বছরের মাঝামাঝি সময়ে নাথিং ফোন ১ লঞ্চ হওয়ার বিষয়টি নিশ্চিত করেছে নাথিং এর প্রতিষ্ঠাতা কার্ল পে। ফ্লিপকার্টের মাধ্যমে ভারতের বাজারে ফোনটি বিক্রি শুরু করবে তারা। ইতোমধ্যে ফোনটির বেশ কিছু ফিচার সম্পর্কে তথ্য প্রকাশ্যে এসেছে। টিপস্টার থেকে যে স্পেসিফিকেশন জানা গিয়েছে তা থেকে ধারণা করা হচ্ছে সম্ভবত মিড রেঞ্জের ফোন হবে নাথিং ফোন ১। আইফোনের স্পেসিফিকেশনের সঙ্গে টেক্কা দিলেও, সেই তুলনায় দাম রাখা হবে অনেক কম। এমনটাই অনুমান করা হচ্ছে।"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/voice_icon"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:tag="NOT_PALYING"
+        >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</RelativeLayout>
